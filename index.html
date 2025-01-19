@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Minimalist UI Kit</title>
+    
+    <!-- Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Ana stil dosyamız -->
+    <link rel="stylesheet" href="styles/elena.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="section">
+            <h1>Elena UI Components</h1>
+            <p>Minimalist design system using #F8F9FA color palette</p>
+        </header>
+        <!-- Buttons Section -->
+        <section class="section">
+            <h2>Buttons</h2>
+            <!-- Button Styles -->
+            <div class="button-showcase">
+                <h3>Styles</h3>
+                <div class="button-group">
+                    <button class="btn">Default</button>
+                    <button class="btn btn-outline">Outline</button>
+                    <button class="btn btn-soft">Soft</button>
+                    <button class="btn btn-ghost">Ghost</button>
+                </div>
+            </div>
+
+            <!-- Button Sizes -->
+            <div class="button-showcase">
+                <h3>Sizes</h3>
+                <div class="button-group">
+                    <button class="btn btn-sm">Small</button>
+                    <button class="btn">Default</button>
+                    <button class="btn btn-lg">Large</button>
+                </div>
+            </div>
+
+            <!-- Button States -->
+            <div class="button-showcase">
+                <h3>States</h3>
+                <div class="button-group">
+                    <button class="btn btn-loading">Loading...</button>
+                    <button class="btn" disabled>Disabled</button>
+                    <button class="btn btn-success">
+                        <i class="fas fa-check"></i>
+                        Success
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-times"></i>
+                        Danger
+                    </button>
+                </div>
+            </div>
+
+            <!-- Full Width Button -->
+            <div class="button-showcase">
+                <h3>Full Width</h3>
+                <div class="button-group">
+                    <button class="btn btn-full">Full Width Button</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Elements Section -->
+        <section class="section">
+            <h2>Form Elements</h2>
+
+            <!-- Checkboxes -->
+            <div class="form-group">
+                <h3>Custom Checkboxes</h3>
+                <label class="checkbox-container">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Default Checked
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Default Unchecked
+                </label>
+            </div>
+
+            <!-- Radio Buttons -->
+            <div class="form-group">
+                <h3>Radio Buttons</h3>
+                <label class="radio-container">
+                    <input type="radio" name="radio" checked>
+                    <span class="radio-mark"></span>
+                    Option One
+                </label>
+                <label class="radio-container">
+                    <input type="radio" name="radio">
+                    <span class="radio-mark"></span>
+                    Option Two
+                </label>
+            </div>
+
+            <!-- Toggle Switch -->
+            <div class="form-group">
+                <h3>Toggle Switches</h3>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                    Enable notifications
+                </label>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                    Dark mode
+                </label>
+            </div>
+
+            <!-- Select Dropdown -->
+            <div class="form-group">
+                <h3>Custom Select</h3>
+                <div class="select-wrapper">
+                    <select class="custom-select">
+                        <option value="" disabled selected>Choose an option</option>
+                        <option value="1">Option One</option>
+                        <option value="2">Option Two</option>
+                        <option value="3">Option Three</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Range Slider -->
+            <div class="form-group">
+                <h3>Range Slider</h3>
+                <div class="range-wrapper">
+                    <input type="range" min="0" max="100" value="50" class="range-slider">
+                    <output class="range-value">50</output>
+                </div>
+            </div>
+
+            <!-- File Upload -->
+            <div class="form-group">
+                <h3>File Upload</h3>
+                <label class="file-upload">
+                    <input type="file" class="file-input">
+                    <span class="file-trigger">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        Choose a file
+                    </span>
+                    <span class="file-name">No file chosen</span>
+                </label>
+            </div>
+
+            <!-- Date Picker -->
+            <div class="form-group">
+                <h3>Date Picker</h3>
+                <div class="date-picker-wrapper">
+                    <input type="date" class="date-picker">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section">
+            <h2>Features</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <span class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </span>
+                    <p>Lightning fast performance with optimized code structure</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </span>
+                    <p>Clean and minimal design focused on content</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </span>
+                    <p>Modern color palette based on #F8F9FA</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">
+                        <i class="fas fa-arrows-left-right"></i>
+                    </span>
+                    <p>Fully responsive layout that works on all devices</p>
+                </div>
+            </div>
+        </section>
+        <!--UMAY LABS CSS FRAMEWORK 2025-->
+        <!-- Alert Section -->
+        <section class="section">
+            <h2>Alerts</h2>
+            <div class="alerts-list">
+                <div class="alert alert-success">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Operation completed successfully!</p>
+                </div>
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Here's something you should know.</p>
+                </div>
+                <div class="alert alert-warning">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Warning: Please proceed with caution.</p>
+                </div>
+                <div class="alert alert-error">
+                    <i class="fas fa-times-circle"></i>
+                    <p>Error: Something went wrong.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Badges Section -->
+        <section class="section">
+            <h2>Badges</h2>
+
+            <!-- Basic Badges -->
+            <div class="badge-showcase">
+                <h3>Basic Badges</h3>
+                <div class="badge-group">
+                    <span class="badge">Default</span>
+                    <span class="badge badge-primary">Primary</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-danger">Danger</span>
+                    <span class="badge badge-info">Info</span>
+                </div>
+            </div>
+
+            <!-- Soft Badges -->
+            <div class="badge-showcase">
+                <h3>Soft Badges</h3>
+                <div class="badge-group">
+                    <span class="badge badge-soft">Default</span>
+                    <span class="badge badge-soft-primary">Primary</span>
+                    <span class="badge badge-soft-success">Success</span>
+                    <span class="badge badge-soft-warning">Warning</span>
+                    <span class="badge badge-soft-danger">Danger</span>
+                    <span class="badge badge-soft-info">Info</span>
+                </div>
+            </div>
+
+            <!-- Outline Badges -->
+            <div class="badge-showcase">
+                <h3>Outline Badges</h3>
+                <div class="badge-group">
+                    <span class="badge badge-outline">Default</span>
+                    <span class="badge badge-outline-primary">Primary</span>
+                    <span class="badge badge-outline-success">Success</span>
+                    <span class="badge badge-outline-warning">Warning</span>
+                    <span class="badge badge-outline-danger">Danger</span>
+                    <span class="badge badge-outline-info">Info</span>
+                </div>
+            </div>
+
+            <!-- Dot Badges -->
+            <div class="badge-showcase">
+                <h3>Dot Badges</h3>
+                <div class="badge-group">
+                    <span class="badge badge-dot">Default</span>
+                    <span class="badge badge-dot badge-primary">Primary</span>
+                    <span class="badge badge-dot badge-success">Success</span>
+                    <span class="badge badge-dot badge-warning">Warning</span>
+                    <span class="badge badge-dot badge-danger">Danger</span>
+                    <span class="badge badge-dot badge-info">Info</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Section -->
+        <section class="section">
+            <h2>Progress Bars</h2>
+            <div class="progress-list">
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Upload</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Processing</span>
+                        <span>45%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 45%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal/Dialog Section -->
+        <section class="section">
+            <h2>Modal & Dialog</h2>
+            <button class="btn" onclick="document.getElementById('demo-modal').showModal()">
+                <i class="fas fa-window-maximize"></i>
+                Open Modal
+            </button>
+
+            <dialog id="demo-modal" class="modal">
+                <div class="modal-content">
+                    <h3>Modal Title</h3>
+                    <p>This is a simple modal dialog box with minimal styling.</p>
+                    <div class="modal-actions">
+                        <button class="btn" onclick="document.getElementById('demo-modal').close()">
+                            <i class="fas fa-times"></i>
+                            Close
+                        </button>
+                        <button class="btn">
+                            <i class="fas fa-check"></i>
+                            Confirm
+                        </button>
+                    </div>
+                </div>
+            </dialog>
+        </section>
+
+        <!-- Breadcrumb Section -->
+        <section class="section">
+            <h2>Breadcrumb Navigation</h2>
+            <nav class="breadcrumb">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Categories</a>
+                    </li>
+                    <li class="active">Current Page</li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Toggle Switches Section -->
+        <section class="section">
+            <h2>Toggle Switches</h2>
+            <div class="switches-list">
+                <label class="switch-wrapper">
+                    <span class="switch-label">Notifications</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </label>
+
+                <label class="switch-wrapper">
+                    <span class="switch-label">Dark Mode</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </label>
+
+                <label class="switch-wrapper">
+                    <span class="switch-label">Auto-update</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </label>
+            </div>
+        </section>
+
+        <!-- Accordion Section -->
+        <section class="section">
+            <h2>Accordions</h2>
+
+            <!-- Basic Accordion -->
+            <div class="accordion-showcase">
+                <h3>Basic Accordion</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>What is this UI Kit?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>This is a modern, minimal UI Kit based on the #F8F9FA color palette. It includes various components for building clean and professional web interfaces.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>How to use components?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Simply copy the HTML structure and corresponding CSS classes. Each component is modular and can be customized to fit your needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Is it responsive?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, all components are fully responsive and work great on all devices, from mobile phones to desktop computers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loading Indicators Section -->
+        <section class="section">
+            <h2>Loading Indicators</h2>
+            <div class="loaders-container">
+                <div class="loader-item">
+                    <div class="spinner"></div>
+                    <span>Loading...</span>
+                </div>
+                
+                <div class="loader-item">
+                    <div class="progress-line"></div>
+                    <span>Processing...</span>
+                </div>
+
+                <div class="loader-item">
+                    <div class="dots-loader">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>Please wait...</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Color Palette Section -->
+        <section class="section">
+            <h2>Color Palette</h2>
+            <div class="color-palette">
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #F8F9FA;"></div>
+                    <div class="color-details">
+                        <span class="color-name">Base</span>
+                        <span class="color-hex">#F8F9FA</span>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #FFFFFF;"></div>
+                    <div class="color-details">
+                        <span class="color-name">Lighter</span>
+                        <span class="color-hex">#FFFFFF</span>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #E9ECEF;"></div>
+                    <div class="color-details">
+                        <span class="color-name">Dark</span>
+                        <span class="color-hex">#E9ECEF</span>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-preview" style="background-color: #DEE2E6;"></div>
+                    <div class="color-details">
+                        <span class="color-name">Darker</span>
+                        <span class="color-hex">#DEE2E6</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section class="section">
+            <h2>Typography</h2>
+            <div class="typography-showcase">
+                <div class="type-item">
+                    <h1>Heading 1</h1>
+                    <span class="type-details">2.5rem / Inter Bold</span>
+                </div>
+                <div class="type-item">
+                    <h2>Heading 2</h2>
+                    <span class="type-details">1.75rem / Inter SemiBold</span>
+                </div>
+                <div class="type-item">
+                    <h3>Heading 3</h3>
+                    <span class="type-details">1.25rem / Inter Medium</span>
+                </div>
+                <div class="type-item">
+                    <p class="body-text">Body Text</p>
+                    <span class="type-details">1rem / Inter Regular</span>
+                </div>
+                <div class="type-item">
+                    <p class="small-text">Small Text</p>
+                    <span class="type-details">0.875rem / Inter Regular</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid System Section -->
+        <section class="section">
+            <h2>Grid System</h2>
+            <div class="grid-showcase">
+                <div class="grid-row">
+                    <div class="grid-col">1/4</div>
+                    <div class="grid-col">1/4</div>
+                    <div class="grid-col">1/4</div>
+                    <div class="grid-col">1/4</div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-col">1/3</div>
+                    <div class="grid-col">1/3</div>
+                    <div class="grid-col">1/3</div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-col">1/2</div>
+                    <div class="grid-col">1/2</div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-col">Full Width</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tags Section -->
+        <section class="section">
+            <h2>Tags</h2>
+
+            <!-- Basic Tags -->
+            <div class="tag-showcase">
+                <h3>Basic Tags</h3>
+                <div class="tag-group">
+                    <span class="tag">Default</span>
+                    <span class="tag tag-outline">Outline</span>
+                    <span class="tag tag-soft">Soft</span>
+                    <span class="tag tag-ghost">Ghost</span>
+                </div>
+            </div>
+
+            <!-- Status Tags -->
+            <div class="tag-showcase">
+                <h3>Status Tags</h3>
+                <div class="tag-group">
+                    <span class="tag tag-success">
+                        <i class="fas fa-check"></i>
+                        Active
+                    </span>
+                    <span class="tag tag-warning">
+                        <i class="fas fa-clock"></i>
+                        Pending
+                    </span>
+                    <span class="tag tag-danger">
+                        <i class="fas fa-times"></i>
+                        Rejected
+                    </span>
+                    <span class="tag tag-info">
+                        <i class="fas fa-info"></i>
+                        Info
+                    </span>
+                </div>
+            </div>
+
+            <!-- Rounded Tags -->
+            <div class="tag-showcase">
+                <h3>Rounded Tags</h3>
+                <div class="tag-group">
+                    <span class="tag tag-rounded">Design</span>
+                    <span class="tag tag-rounded tag-outline">UI/UX</span>
+                    <span class="tag tag-rounded tag-soft">Frontend</span>
+                    <span class="tag tag-rounded tag-ghost">Development</span>
+                </div>
+            </div>
+
+            <!-- Size Variants -->
+            <div class="tag-showcase">
+                <h3>Sizes</h3>
+                <div class="tag-group">
+                    <span class="tag tag-sm">Small</span>
+                    <span class="tag">Default</span>
+                    <span class="tag tag-lg">Large</span>
+                </div>
+            </div>
+
+            <!-- Removable Tags -->
+            <div class="tag-showcase">
+                <h3>Removable Tags</h3>
+                <div class="tag-group">
+                    <span class="tag tag-removable">
+                        React
+                        <button class="tag-remove" aria-label="Remove tag">×</button>
+                    </span>
+                    <span class="tag tag-removable tag-outline">
+                        TypeScript
+                        <button class="tag-remove" aria-label="Remove tag">×</button>
+                    </span>
+                    <span class="tag tag-removable tag-soft">
+                        JavaScript
+                        <button class="tag-remove" aria-label="Remove tag">×</button>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development & Design Badges Section -->
+        <section class="section">
+            <h2>Development & Design Badges</h2>
+
+            <!-- Programming Languages -->
+            <div class="badge-showcase">
+                <h3>Programming Languages</h3>
+                <div class="badge-group">
+                    <span class="badge badge-dev">
+                        <i class="fab fa-js"></i>
+                        JavaScript
+                    </span>
+                    <span class="badge badge-dev">
+                        <i class="fab fa-python"></i>
+                        Python
+                    </span>
+                    <span class="badge badge-dev rust">
+                        <i class="fas fa-cog"></i>
+                        Rust
+                    </span>
+                    <span class="badge badge-dev go">
+                        <i class="fas fa-code"></i>
+                        Go
+                    </span>
+                    <span class="badge badge-dev nim">
+                        <i class="fas fa-bolt"></i>
+                        Nim
+                    </span>
+                    <span class="badge badge-dev kotlin">
+                        <i class="fab fa-android"></i>
+                        Kotlin
+                    </span>
+                    <span class="badge badge-dev swift">
+                        <i class="fab fa-apple"></i>
+                        Swift
+                    </span>
+                </div>
+            </div>
+
+            <!-- Backend Technologies -->
+            <div class="badge-showcase">
+                <h3>Backend Technologies</h3>
+                <div class="badge-group">
+                    <span class="badge badge-backend">
+                        <i class="fab fa-node"></i>
+                        Node.js
+                    </span>
+                    <span class="badge badge-backend">
+                        <i class="fas fa-leaf"></i>
+                        Spring
+                    </span>
+                    <span class="badge badge-backend">
+                        <i class="fab fa-laravel"></i>
+                        Laravel
+                    </span>
+                    <span class="badge badge-backend">
+                        <i class="fas fa-gem"></i>
+                        Ruby
+                    </span>
+                    <span class="badge badge-backend">
+                        <i class="fab fa-docker"></i>
+                        Docker
+                    </span>
+                </div>
+            </div>
+
+            <!-- Cloud & DevOps -->
+            <div class="badge-showcase">
+                <h3>Cloud & DevOps</h3>
+                <div class="badge-group">
+                    <span class="badge badge-cloud">
+                        <i class="fab fa-aws"></i>
+                        AWS
+                    </span>
+                    <span class="badge badge-cloud">
+                        <i class="fab fa-google"></i>
+                        GCP
+                    </span>
+                    <span class="badge badge-cloud">
+                        <i class="fab fa-microsoft"></i>
+                        Azure
+                    </span>
+                    <span class="badge badge-cloud">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </span>
+                    <span class="badge badge-cloud">
+                        <i class="fab fa-gitlab"></i>
+                        GitLab
+                    </span>
+                </div>
+            </div>
+
+            <!-- Database Technologies -->
+            <div class="badge-showcase">
+                <h3>Database Technologies</h3>
+                <div class="badge-group">
+                    <span class="badge badge-database">
+                        <i class="fas fa-database"></i>
+                        MongoDB
+                    </span>
+                    <span class="badge badge-database">
+                        <i class="fas fa-server"></i>
+                        PostgreSQL
+                    </span>
+                    <span class="badge badge-database">
+                        <i class="fas fa-cube"></i>
+                        Redis
+                    </span>
+                    <span class="badge badge-database">
+                        <i class="fas fa-layer-group"></i>
+                        GraphQL
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabs Section -->
+        <section class="section">
+            <h2>Tabs</h2>
+
+            <!-- Basic Tabs -->
+            <div class="tabs-showcase">
+                <h3>Basic Tabs</h3>
+                <div class="tabs">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="tab1">Dashboard</button>
+                        <button class="tab-btn" data-tab="tab2">Profile</button>
+                        <button class="tab-btn" data-tab="tab3">Settings</button>
+                        <button class="tab-btn" data-tab="tab4">Help</button>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-panel active" id="tab1">
+                            <h4>Dashboard Content</h4>
+                            <p>This is your main dashboard overview. Here you can see all your important metrics and data.</p>
+                        </div>
+                        <div class="tab-panel" id="tab2">
+                            <h4>Profile Content</h4>
+                            <p>Manage your profile settings and personal information here.</p>
+                        </div>
+                        <div class="tab-panel" id="tab3">
+                            <h4>Settings Content</h4>
+                            <p>Configure your application settings and preferences.</p>
+                        </div>
+                        <div class="tab-panel" id="tab4">
+                            <h4>Help Content</h4>
+                            <p>Need help? Find guides and documentation here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Display Section -->
+        <section class="section">
+            <h2>Data Display</h2>
+
+            <!-- Modern Table -->
+            <div class="display-group">
+                <h3>Modern Table</h3>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>john@example.com</td>
+                                <td>Developer</td>
+                                <td><span class="status-badge active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jane Smith</td>
+                                <td>jane@example.com</td>
+                                <td>Designer</td>
+                                <td><span class="status-badge">Offline</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Lists -->
+            <div class="display-group">
+                <h3>Interactive List</h3>
+                <ul class="modern-list">
+                    <li class="list-item">
+                        <div class="list-content">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Project Documentation</span>
+                        </div>
+                        <span class="list-action">View</span>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-content">
+                            <i class="fas fa-code"></i>
+                            <span>Source Code</span>
+                        </div>
+                        <span class="list-action">Edit</span>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-content">
+                            <i class="fas fa-bug"></i>
+                            <span>Bug Reports</span>
+                        </div>
+                        <span class="list-action">Fix</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tree View -->
+            <div class="display-group">
+                <h3>Tree View</h3>
+                <div class="tree-view">
+                    <div class="tree-item">
+                        <i class="fas fa-folder"></i>
+                        <span>Project Root</span>
+                        <div class="tree-children">
+                            <div class="tree-item">
+                                <i class="fas fa-folder"></i>
+                                <span>src</span>
+                                <div class="tree-children">
+                                    <div class="tree-item">
+                                        <i class="fas fa-file-code"></i>
+                                        <span>index.js</span>
+                                    </div>
+                                    <div class="tree-item">
+                                        <i class="fas fa-file-code"></i>
+                                        <span>styles.css</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tree-item">
+                                <i class="fas fa-folder"></i>
+                                <span>public</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="display-group">
+                <h3>Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Project Started</h4>
+                            <p>Initial commit and repository setup</p>
+                            <span class="timeline-date">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Feature Update</h4>
+                            <p>Added new components and styles</p>
+                            <span class="timeline-date">1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Version Release</h4>
+                            <p>Released version 1.0.0</p>
+                            <span class="timeline-date">1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Toast Notifications Section -->
+        <section class="section">
+            <h2>Toast Notifications</h2>
+            <div class="button-group">
+                <button class="btn" onclick="showToast('success')">Show Success</button>
+                <button class="btn" onclick="showToast('error')">Show Error</button>
+                <button class="btn" onclick="showToast('warning')">Show Warning</button>
+                <button class="btn" onclick="showToast('info')">Show Info</button>
+            </div>
+
+            <!-- Toast Container -->
+            <div id="toast-container"></div>
+        </section>
+
+        <!-- Copy to Clipboard Section -->
+        <section class="section">
+            <h2>Copy to Clipboard</h2>
+            
+            <!-- Basic Copy Button -->
+            <div class="display-group">
+                <h3>Basic Copy Button</h3>
+                <div class="copy-wrapper">
+                    <input type="text" class="copy-input" value="Hello, this is copyable text!" readonly>
+                    <button class="copy-btn" data-clipboard>
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Code Block Copy -->
+            <div class="display-group">
+                <h3>Code Block Copy</h3>
+                <div class="code-block">
+                    <pre><code>npm install modern-ui-kit
+yarn add modern-ui-kit</code></pre>
+                    <button class="copy-btn code-copy-btn" data-clipboard>
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- API Key Copy -->
+            <div class="display-group">
+                <h3>API Key Copy</h3>
+                <div class="copy-wrapper secure">
+                    <input type="text" class="copy-input" value="sk_test_51NXbWPI9HhGN8Jw2PkP" readonly>
+                    <button class="copy-btn" data-clipboard>
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Buttons Section -->
+        <section class="section">
+            <h2>Social Media Buttons</h2>
+
+            <!-- Basic Social Buttons -->
+            <div class="display-group">
+                <h3>Basic Social Buttons</h3>
+                <div class="social-buttons">
+                    <button class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </button>
+                    <button class="social-btn twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </button>
+                    <button class="social-btn instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </button>
+                    <button class="social-btn linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </button>
+                    <button class="social-btn github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Icon Only Buttons -->
+            <div class="display-group">
+                <h3>Icon Only</h3>
+                <div class="social-buttons">
+                    <button class="social-btn social-btn-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="social-btn social-btn-icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="social-btn social-btn-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                    <button class="social-btn social-btn-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </button>
+                    <button class="social-btn social-btn-icon github">
+                        <i class="fab fa-github"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Rounded Style -->
+            <div class="display-group">
+                <h3>Rounded Style</h3>
+                <div class="social-buttons">
+                    <button class="social-btn social-btn-rounded facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Share</span>
+                    </button>
+                    <button class="social-btn social-btn-rounded twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Tweet</span>
+                    </button>
+                    <button class="social-btn social-btn-rounded instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Share</span>
+                    </button>
+                    <button class="social-btn social-btn-rounded linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>Share</span>
+                    </button>
+                    <button class="social-btn social-btn-rounded github">
+                        <i class="fab fa-github"></i>
+                        <span>Fork</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="section">
+            <p>Created with <i class="fas fa-heart"></i> using Modern UI Kit</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/elena.js"></script>
+</body>
+</html> 
