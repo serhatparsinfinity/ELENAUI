@@ -33,6 +33,17 @@ document.addEventListener('DOMContentLoaded', function() {
             accordionItem.classList.toggle('active');
         });
     });
+
+    // Dismissible alerts
+    document.querySelectorAll('.alert-dismissible .alert-close').forEach(button => {
+        button.addEventListener('click', () => {
+            const alert = button.closest('.alert');
+            alert.style.animation = 'slideOut 0.3s ease-out forwards';
+            setTimeout(() => {
+                alert.remove();
+            }, 300);
+        });
+    });
 }); 
 
 // Range slider value update
@@ -156,6 +167,51 @@ document.querySelectorAll('[data-clipboard]').forEach(button => {
             document.body.appendChild(toast);
             
             setTimeout(() => toast.remove(), 2000);
+        }
+    });
+}); 
+
+// Add slideOut animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes slideOut {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+    }
+`;
+document.head.appendChild(style); 
+
+// Modal Functions
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.showModal();
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.close();
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside
+document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('click', e => {
+        const modalDimensions = modal.getBoundingClientRect();
+        if (
+            e.clientX < modalDimensions.left ||
+            e.clientX > modalDimensions.right ||
+            e.clientY < modalDimensions.top ||
+            e.clientY > modalDimensions.bottom
+        ) {
+            modal.close();
+            document.body.style.overflow = 'auto';
         }
     });
 }); 

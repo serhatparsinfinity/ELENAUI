@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Minimalist UI Kit</title>
+    <title>Elena UI - Modern CSS Library.</title>
     
     <!-- Inter font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,13 +13,26 @@
     
     <!-- Ana stil dosyamız -->
     <link rel="stylesheet" href="styles/elena.css">
+	<link rel="stylesheet" href="fav.png" type="image/x-icon" />
 </head>
 <body>
     <div class="container">
         <!-- Header Section -->
         <header class="section">
-            <h1>Elena UI Components</h1>
-            <p>Minimalist design system using #F8F9FA color palette</p>
+            <h1>Elena UI CSS Library.</h1>
+            <p>ElenaUI 🌟 is a modern, minimal CSS UI library tailored for small projects. 🎨✨</p>
+            <p>Version: <span class="badge badge-icon badge-success"><i class="fas fa-check-circle"></i> 1.0</span></p>
+            <div class="display-group">
+                <h3>Getting started:</h3>
+                <div class="copy-wrapperr">
+                    <input type="text" class="copy-input" value="https://cdn.jsdelivr.net/gh/serhatparsinfinity/ELENAUI@main/styles/elena.css" readonly="">
+                    <button class="copy-btn" data-clipboard="">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+                <br>
+                <a href="https://docs.elenaui.serhatpars.net/"><button class="btn"><i class="fa-solid fa-book"></i>&nbsp;Documentation</button></a>
+            </div>
         </header>
         <!-- Buttons Section -->
         <section class="section">
@@ -75,9 +88,9 @@
         <section class="section">
             <h2>Form Elements</h2>
 
-            <!-- Checkboxes -->
+            <!-- Basic Checkboxes -->
             <div class="form-group">
-                <h3>Custom Checkboxes</h3>
+                <h3>Basic Checkboxes</h3>
                 <label class="checkbox-container">
                     <input type="checkbox" checked>
                     <span class="checkmark"></span>
@@ -90,19 +103,107 @@
                 </label>
             </div>
 
-            <!-- Radio Buttons -->
+            <!-- Colored Checkboxes -->
             <div class="form-group">
-                <h3>Radio Buttons</h3>
+                <h3>Colored Checkboxes</h3>
+                <label class="checkbox-container checkbox-primary">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Primary
+                </label>
+                <label class="checkbox-container checkbox-success">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Success
+                </label>
+                <label class="checkbox-container checkbox-warning">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Warning
+                </label>
+                <label class="checkbox-container checkbox-danger">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Danger
+                </label>
+            </div>
+
+            <!-- Rounded Checkboxes -->
+            <div class="form-group">
+                <h3>Rounded Checkboxes</h3>
+                <label class="checkbox-container checkbox-rounded">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Rounded Style
+                </label>
+                <label class="checkbox-container checkbox-rounded checkbox-success">
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                    Rounded Success
+                </label>
+            </div>
+
+            <!-- Basic Radio Buttons -->
+            <div class="form-group">
+                <h3>Basic Radio Buttons</h3>
                 <label class="radio-container">
-                    <input type="radio" name="radio" checked>
+                    <input type="radio" name="radio-basic" checked>
                     <span class="radio-mark"></span>
                     Option One
                 </label>
                 <label class="radio-container">
-                    <input type="radio" name="radio">
+                    <input type="radio" name="radio-basic">
                     <span class="radio-mark"></span>
                     Option Two
                 </label>
+            </div>
+
+            <!-- Colored Radio Buttons -->
+            <div class="form-group">
+                <h3>Colored Radio Buttons</h3>
+                <label class="radio-container radio-primary">
+                    <input type="radio" name="radio-color" checked>
+                    <span class="radio-mark"></span>
+                    Primary
+                </label>
+                <label class="radio-container radio-success">
+                    <input type="radio" name="radio-color">
+                    <span class="radio-mark"></span>
+                    Success
+                </label>
+                <label class="radio-container radio-warning">
+                    <input type="radio" name="radio-color">
+                    <span class="radio-mark"></span>
+                    Warning
+                </label>
+                <label class="radio-container radio-danger">
+                    <input type="radio" name="radio-color">
+                    <span class="radio-mark"></span>
+                    Danger
+                </label>
+            </div>
+
+            <!-- Card Radio Buttons -->
+            <div class="form-group">
+                <h3>Card Radio Buttons</h3>
+                <div class="radio-card-group">
+                    <label class="radio-card">
+                        <input type="radio" name="radio-card" checked>
+                        <div class="card-content">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Starter</h4>
+                            <p>Perfect for beginners</p>
+                        </div>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="radio-card">
+                        <div class="card-content">
+                            <i class="fas fa-crown"></i>
+                            <h4>Premium</h4>
+                            <p>For professional use</p>
+                        </div>
+                    </label>
+                </div>
             </div>
 
             <!-- Toggle Switch -->
@@ -199,6 +300,8 @@
         <section class="section">
             <h2>Alerts</h2>
             <div class="alerts-list">
+                <!-- Basic Alerts -->
+                <h3>Basic Alerts</h3>
                 <div class="alert alert-success">
                     <i class="fas fa-check-circle"></i>
                     <p>Operation completed successfully!</p>
@@ -214,6 +317,112 @@
                 <div class="alert alert-error">
                     <i class="fas fa-times-circle"></i>
                     <p>Error: Something went wrong.</p>
+                </div>
+
+                <!-- Dismissible Alerts -->
+                <h3>Dismissible Alerts</h3>
+                <div class="alert alert-success alert-dismissible">
+                    <div class="alert-content">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Your changes have been saved successfully!</p>
+                    </div>
+                    <button class="alert-close" aria-label="Close alert">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="alert alert-info alert-dismissible">
+                    <div class="alert-content">
+                        <i class="fas fa-info-circle"></i>
+                        <p>A new software update is available.</p>
+                    </div>
+                    <button class="alert-close" aria-label="Close alert">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Outlined Alerts -->
+                <h3>Outlined Alerts</h3>
+                <div class="alert alert-outline alert-success">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Profile updated successfully!</p>
+                </div>
+                <div class="alert alert-outline alert-info">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Your trial period ends in 3 days.</p>
+                </div>
+                <div class="alert alert-outline alert-warning">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Warning: Please proceed with caution.</p>
+                </div>
+                <div class="alert alert-outline alert-error">
+                    <i class="fas fa-times-circle"></i>
+                    <p>Error: Something went wrong.</p>
+                </div>
+
+                <!-- Modern Alerts with Actions -->
+                <h3>Alerts with Actions</h3>
+                <div class="alert alert-modern alert-info">
+                    <div class="alert-content">
+                        <div class="alert-title">Update Available</div>
+                        <p>A new version (2.0.4) is available. Would you like to update now?</p>
+                    </div>
+                    <div class="alert-actions">
+                        <button class="btn btn-sm">Update Now</button>
+                        <button class="btn btn-ghost btn-sm">Later</button>
+                    </div>
+                </div>
+
+                <!-- Banner Alerts -->
+                <h3>Banner Alerts</h3>
+                <div class="alert alert-banner alert-warning">
+                    <div class="alert-content">
+                        <i class="fas fa-cookie-bite"></i>
+                        <div>
+                            <div class="alert-title">Cookie Notice</div>
+                            <p>We use cookies to ensure you get the best experience on our website.</p>
+                        </div>
+                    </div>
+                    <div class="alert-actions">
+                        <button class="btn btn-sm">Accept All</button>
+                        <button class="btn btn-ghost btn-sm">Customize</button>
+                    </div>
+                </div>
+
+                <!-- Compact Alerts -->
+                <h3>Compact Alerts</h3>
+                <div class="alert alert-compact alert-success">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Payment received</p>
+                </div>
+                <div class="alert alert-compact alert-error">
+                    <i class="fas fa-times-circle"></i>
+                    <p>Invalid credentials</p>
+                </div>
+
+                <!-- Rich Content Alert -->
+                <h3>Rich Content Alert</h3>
+                <div class="alert alert-rich">
+                    <div class="alert-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="alert-content">
+                        <div class="alert-title">Special Offer!</div>
+                        <p>Get <span class="highlight">20% off</span> on your first purchase.</p>
+                        <div class="code-block">
+                            Use code: <span class="promo-code">WELCOME20</span>
+                        </div>
+                        <div class="alert-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                Ends in 24 hours
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-tag"></i>
+                                New users only
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -273,12 +482,157 @@
                     <span class="badge badge-dot badge-info">Info</span>
                 </div>
             </div>
+
+            <!-- Status Badges -->
+            <div class="badge-showcase">
+                <h3>Status Badges</h3>
+                <div class="badge-group">
+                    <!-- Temel Status Badge'ler -->
+                    <span class="badge badge-status">
+                        <span class="status-dot active"></span>
+                        Active
+                    </span>
+                    <span class="badge badge-status">
+                        <span class="status-dot inactive"></span>
+                        Inactive
+                    </span>
+                    <span class="badge badge-status">
+                        <span class="status-dot pending"></span>
+                        Pending
+                    </span>
+
+                    <!-- Yeni Status Badge'ler -->
+                    <span class="badge badge-status">
+                        <span class="status-dot processing"></span>
+                        Processing
+                    </span>
+                    <span class="badge badge-status">
+                        <span class="status-dot completed"></span>
+                        Completed
+                    </span>
+                    <span class="badge badge-status">
+                        <span class="status-dot blocked"></span>
+                        Blocked
+                    </span>
+                    <span class="badge badge-status">
+                        <span class="status-dot reviewing"></span>
+                        Reviewing
+                    </span>
+                    <span class="badge badge-status">
+                        <span class="status-dot draft"></span>
+                        Draft
+                    </span>
+                    <span class="badge badge-status">
+                        <span class="status-dot scheduled"></span>
+                        Scheduled
+                    </span>
+                    <span class="badge badge-status">
+                        <span class="status-dot archived"></span>
+                        Archived
+                    </span>
+                </div>
+            </div>
+
+            <!-- Icon Badges -->
+            <div class="badge-showcase">
+                <h3>Icon Badges</h3>
+                <div class="badge-group">
+                    <!-- Status Icon Badges -->
+                    <span class="badge badge-icon badge-success">
+                        <i class="fas fa-check-circle"></i>
+                        Verified
+                    </span>
+                    <span class="badge badge-icon badge-primary">
+                        <i class="fas fa-crown"></i>
+                        Premium
+                    </span>
+                    <span class="badge badge-icon badge-warning">
+                        <i class="fas fa-clock"></i>
+                        Pending
+                    </span>
+                    <span class="badge badge-icon badge-info">
+                        <i class="fas fa-sync"></i>
+                        Syncing
+                    </span>
+
+                    <!-- Connection Icon Badges -->
+                    <span class="badge badge-icon badge-success pulse">
+                        <i class="fas fa-wifi"></i>
+                        Online
+                    </span>
+                    <span class="badge badge-icon badge-danger shake">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Alert
+                    </span>
+                    <span class="badge badge-icon badge-primary bounce">
+                        <i class="fas fa-bell"></i>
+                        Notification
+                    </span>
+                    <span class="badge badge-icon badge-info">
+                        <i class="fas fa-circle-notch"></i>
+                        Loading
+                    </span>
+                    <span class="badge badge-icon badge-warning blink">
+                        <i class="fas fa-broadcast-tower"></i>
+                        Live
+                    </span>
+                    <span class="badge badge-icon badge-success wave">
+                        <i class="fas fa-signal"></i>
+                        Connected
+                    </span>
+                </div>
+            </div>
+
+            <!-- Counter Badges -->
+            <div class="badge-showcase">
+                <h3>Counter Badges</h3>
+                <div class="badge-group">
+                    <span class="badge badge-counter">99+</span>
+                    <span class="badge badge-counter badge-primary">5</span>
+                    <span class="badge badge-counter badge-success">3</span>
+                    <span class="badge badge-counter badge-danger">!</span>
+                </div>
+            </div>
+
+            <!-- Gradient Badges -->
+            <div class="badge-showcase">
+                <h3>Gradient Badges</h3>
+                <div class="badge-group">
+                    <!-- Temel Gradient'ler -->
+                    <span class="badge badge-gradient-blue">Pro</span>
+                    <span class="badge badge-gradient-purple">Premium</span>
+                    <span class="badge badge-gradient-gold">VIP</span>
+                    <span class="badge badge-gradient-green">New</span>
+                    
+                    <!-- Yeni Gradient'ler -->
+                    <span class="badge badge-gradient-sunset">Hot</span>
+                    <span class="badge badge-gradient-ocean">Cool</span>
+                    <span class="badge badge-gradient-fire">Trending</span>
+                    <span class="badge badge-gradient-forest">Fresh</span>
+                    <span class="badge badge-gradient-night">Elite</span>
+                    <span class="badge badge-gradient-candy">Special</span>
+                </div>
+            </div>
+
+            <!-- Pill Badges -->
+            <div class="badge-showcase">
+                <h3>Pill Badges</h3>
+                <div class="badge-group">
+                    <span class="badge badge-pill badge-primary">Badge</span>
+                    <span class="badge badge-pill badge-success">Badge</span>
+                    <span class="badge badge-pill badge-warning">Badge</span>
+                    <span class="badge badge-pill badge-danger">Badge</span>
+                </div>
+            </div>
         </section>
 
         <!-- Progress Section -->
         <section class="section">
             <h2>Progress Bars</h2>
-            <div class="progress-list">
+
+            <!-- Basic Progress Bars -->
+            <div class="progress-showcase">
+                <h3>Basic Progress</h3>
                 <div class="progress-item">
                     <div class="progress-label">
                         <span>Upload</span>
@@ -298,29 +652,202 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Animated Progress Bars -->
+            <div class="progress-showcase">
+                <h3>Animated Progress</h3>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Downloading</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-animated" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Striped Progress Bars -->
+            <div class="progress-showcase">
+                <h3>Striped Progress</h3>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Installation</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-striped" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colored Progress Bars -->
+            <div class="progress-showcase">
+                <h3>Colored Progress</h3>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Success</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-success" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Warning</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-warning" style="width: 65%"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Error</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-error" style="width: 30%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Size Variants -->
+            <div class="progress-showcase">
+                <h3>Size Variants</h3>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Small</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="progress-bar progress-sm">
+                        <div class="progress-fill" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Large</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress-bar progress-lg">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gradient Progress -->
+            <div class="progress-showcase">
+                <h3>Gradient Progress</h3>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Premium</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-gradient" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modern Progress Bars -->
+            <div class="progress-showcase">
+                <h3>Modern Progress</h3>
+                <!-- Rounded Progress -->
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Rounded Style</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="progress-bar progress-rounded">
+                        <div class="progress-fill" style="width: 65%"></div>
+                    </div>
+                </div>
+
+                <!-- Glow Progress -->
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Glow Effect</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-glow" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <!-- Segmented Progress -->
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Segmented</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress-bar progress-segmented">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+
+                <!-- Glass Progress -->
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Glass Style</span>
+                        <span>55%</span>
+                    </div>
+                    <div class="progress-bar progress-glass">
+                        <div class="progress-fill" style="width: 55%"></div>
+                    </div>
+                </div>
+
+                <!-- Double Layer Progress -->
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Double Layer</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar progress-double">
+                        <div class="progress-fill-back" style="width: 90%"></div>
+                        <div class="progress-fill-front" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <!-- Neon Progress -->
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Neon Effect</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-neon" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Modal/Dialog Section -->
         <section class="section">
             <h2>Modal & Dialog</h2>
-            <button class="btn" onclick="document.getElementById('demo-modal').showModal()">
-                <i class="fas fa-window-maximize"></i>
-                Open Modal
-            </button>
+            <div class="button-group">
+                <!-- Basic Modal -->
+                <button class="btn btn-modal" onclick="openModal('basic-modal')">
+                    <i class="fas fa-window-maximize"></i>
+                    Basic Modal
+                </button>
+            </div>
 
-            <dialog id="demo-modal" class="modal">
+            <!-- Basic Modal -->
+            <dialog id="basic-modal" class="modal">
                 <div class="modal-content">
-                    <h3>Modal Title</h3>
-                    <p>This is a simple modal dialog box with minimal styling.</p>
-                    <div class="modal-actions">
-                        <button class="btn" onclick="document.getElementById('demo-modal').close()">
+                    <div class="modal-header">
+                        <h3>Basic Modal</h3>
+                        <button class="modal-close" onclick="closeModal('basic-modal')">
                             <i class="fas fa-times"></i>
-                            Close
                         </button>
-                        <button class="btn">
-                            <i class="fas fa-check"></i>
-                            Confirm
-                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is a simple modal dialog box with minimal styling.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-ghost" onclick="closeModal('basic-modal')">Close</button>
+                        <button class="btn btn-primary">Save Changes</button>
                     </div>
                 </div>
             </dialog>
@@ -1022,7 +1549,7 @@ yarn add modern-ui-kit</code></pre>
 
         <!-- Footer Section -->
         <footer class="section">
-            <p>Created with <i class="fas fa-heart"></i> using Modern UI Kit</p>
+            <p>Created with <i class="fas fa-heart"></i> ULS Projekts.</p>
         </footer>
     </div>
 
